@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="forms.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1>Hur kan vi hjälpa dig?</h1>
+    </div>
+
+    <div class="formContainer">
+      <form action="https://httpbin.org/anything" method="post">
+        <div class="firstName">
+          <label for="firstName">First Name</label>
+          <input id="firstName" name="firstName" type="text" required />
+        </div>
+        <div class="lastName">
+          <label for="lastName">Last Name</label>
+          <input id="lastName" name="lastName" type="text" required />
+        </div>
+
+        <div class="telPhone">
+          <label for="phone">Phone:</label>
+          <input
+            type="tel"
+            name="phone"
+            id="phone"
+            placeholder="Enter your phone number"
+            required="number"
+          />
+        </div>
+
+        <div class="email">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required />
+        </div>
+
+        <div class="email">
+          <label for="password">Password</label>
+          <input id="password" name="password" type="password" required />
+        </div>
+
+        <div class="message">
+          <label for="msg">Message</label>
+          <textarea id="msg" name="message"></textarea>
+        </div>
+
+        <div class="subject">
+          <label for="subSelect">Choose a subject</label>
+          <select name="Subject" id="subSelect" required>
+            <option value="">Please choose a subject</option>
+            <option value="complaint">Complaint</option>
+            <option value="feedback">Feedback</option>
+            <option value="reklamation">Reklamation</option>
+          </select>
+        </div>
+
+        <div class="contact">
+          <p>Hur når vi dig bäst?</p>
+          <input type="radio" value="Ring" name="Contact" id="ring" /><label
+            for="Ring"
+            >Ring</label
+          >
+          <input type="radio" value="Email" name="Contact" id="email" /><label
+            for="Email"
+            >Email</label
+          >
+        </div>
+
+        <div class="checkbox">
+          <input type="checkbox" id="godkann" name="godkann" value="villkar" />
+          <label for="godkann">Jag har accepterat allmänna vilkoren</label
+          ><br />
+          <input
+            type="checkbox"
+            id="personupg"
+            name="personupg"
+            value="personupg"
+          />
+          <label for="personupg">Godkännande av personuppgifter</label><br />
+        </div>
+
+        <div class="send">
+          <button type="submit">Skicka</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
